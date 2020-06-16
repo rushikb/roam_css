@@ -1,0 +1,650 @@
+/*  Make sure you have the fonts Lato and Open Sans installed locally on your machine.
+They're free to download from Google:
+https://fonts.google.com/specimen/Lato
+https://fonts.google.com/specimen/Open+Sans  */
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato';
+}
+
+
+div,
+textarea {
+  font-family: 'Open Sans';
+}
+
+
+/*
+div,
+textarea {
+  font-family: 'Avenir Next';
+*/
+
+/*
+div,
+textarea {
+  font-family: 'Menlo';
+*/
+
+
+/*
+div,
+textarea {
+  font-family: 'Open Sans';
+
+
+*/
+
+
+/*
+div,
+textarea {
+  font-family: 'Dank Mono';
+
+
+*/
+
+
+.roam-block-container {
+    max-width: 750px;
+}
+.rm-block-text {
+  max-width: 750px;
+}
+
+
+.rm-query {
+    border: 0.5px solid #e4e9ec;
+    border-radius: 5px;
+    
+}
+
+.rm-query .rm-query-title {
+    background-color: #f7f8f8;
+    padding: 0.8em;
+    color: #d1dbe2;
+    font-size: 80%;
+}
+
+.rm-reference-main.rm-query-content {
+    padding: 0.8em;
+}
+
+.rm-reference-main .rm-reference-item .rm-block-text {
+    font-size: 90%;
+}
+
+
+.rm-ref-page-view-title span {
+    
+}
+
+.rm-reference-main .rm-reference-item .controls {
+    margin-left: -1em;
+}
+
+.rm-ref-page-view {
+    padding: 0.4em 0.2em;
+}
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+    padding: 6px;
+}
+
+div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
+    font-size: 14px;
+    opacity: 80%;
+    letter-spacing: 0.04em;
+}
+
+div.roam-sidebar-container.noselect > div > div {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    
+}
+
+#block-input {
+    background: #f9f9f9;
+}
+
+.roam-body #block-input > span > div {
+    padding: 6px 24px;
+    background: #f9f9f9;
+}
+
+span.bp3-icon-small.bp3-icon-star {
+    display: none;
+    visibility: hidden;
+}
+
+.roam-block {
+    max-width: 850px;
+}
+
+#right-sidebar > div {
+    background-color: #f9f9f9;
+    border-left: 1px solid #a8a7a7;
+}
+.rm-page-ref-brackets {
+    display: none;
+}
+.controls .simple-bullet-outer .simple-bullet-inner {
+    background-color: #e5e9f2;
+}
+.block-border-left {
+    border-left: 1px solid #e3e3e3;
+}
+.kanban-board {
+    background-color: #fff;
+}
+.kanban-card {
+    background-color: white;
+    margin: 8px;
+    box-shadow: 0px 1px 2px #9EB3C0;
+    padding: 10px;
+    border-radius: 2px;
+    line-height: 1.3em;
+}
+.kanban-title {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 6px;
+}
+.kanban-column {
+    background-color: #E4EDF2;
+    margin: 0px 4px 0px 4px;
+    padding: 4px;
+    min-width: 200px;
+    border-radius: 3px;
+}
+/*
+* ⌗ for block refs 🚀
+*/
+.rm-block-ref::before {
+    content: '⌗';
+    display: inline-block;
+    color: #4d94ff;
+    margin-right: 5px;
+    top: -2px;
+    position: relative;
+}
+.rm-block-ref {
+    display: inline-flex;
+    border-bottom: none;
+    font-size: 1em;
+    color: #627a9d;
+    background-color: #f5f7fa;
+}
+
+.rm-block-ref:hover {
+    cursor: pointer;
+}
+
+
+.checkmark {
+    background: #fff;
+}
+.check-container input:checked ~ .checkmark {
+    background: #33bdea;
+}
+.check-container input:checked ~ .checkmark:after {
+    border-color: #fff;
+}
+.rm-reference-item {
+    margin-top: 8px;
+    border-radius: 6px;
+    border: 1px solid #e4e9ee;
+    margin-right: 8px;
+    flex: 1 1 100%;
+    word-break: break-word;
+    background-color: #f7f9fb;
+    padding: 8px;
+}
+
+.rm-level2 {
+    font-size: 1.5em;
+}
+.rm-level3 {
+    color: #717686;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+.rm-page-ref {
+    color: #4c92c8;
+}
+.rm-page-ref-link-color {
+    color: #5c05ae;
+    font-weight: 600;
+}
+a {
+    color: #017530;
+}
+.rm-page-ref-namespace-color {
+    color: green;
+}
+
+.intercom-app,
+.intercom-launcher-frame,
+#intercom-container {
+    display: none;
+}
+.roam-body .roam-app .roam-sidebar-container {
+    background-color: #f9f9f9;
+    border-right: 1px #eee solid;
+}
+
+.roam-body .roam-app {
+    background-color: #f9f9f9;
+    border-right: 1px #444 solid;
+}
+strong {
+  font-weight: 900;
+}
+.roam-topbar {
+ 
+  background-color: #f9f9f9; /* RTB change: bear background */
+  padding-right: 16px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.roam-body .roam-app .roam-sidebar-container > * {
+    opacity: 80%;
+    box-shadow: none;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+    background: #f9f9f9;
+    color: black;
+    opacity: 100%;
+}
+#buffer.tall {
+    height: calc(100vh - 50px);
+}
+.check-container {
+    padding-right: 4px;
+}
+span.rm-page-ref {
+    border-radius: 2px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.content span.rm-page-ref {
+    padding: 4px 1px 1px;
+    /* required for fixing azo */
+}
+.center-proj {
+    text-align: center;
+}
+
+/* Custom data tags */
+
+/* Custom data tags based on page_name headers*/
+
+/* Projects */
+
+span.rm-page-ref[data-tag^="W/"] {
+    background:  #569C3B;
+    color: #fff;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+/* zettels */
+span.rm-page-ref[data-tag^="Z: "] {
+    background: #569C3B;
+    color: #fff;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+.rm-alias-external:after {
+    content: ' 🔗'
+}
+
+/* Custom data tags */
+span.rm-page-ref[data-tag="imp"] {
+    background: #4747c4;
+    color: white;
+    padding: 3px 5px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="q"] {
+    background: #e80202;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="fix"] {
+    background: #e80202;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="follow_up"] {
+    background: #e80202;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="flag"] {
+    background: #e80202;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+span.rm-page-ref[data-tag="nb"] {
+    background: #6a09bf;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="p"] {
+    background: #40bf09;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="fixed"] {
+    background: #40bf09;
+    color: white;
+    padding: 3px 5px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+
+span.rm-page-ref[data-tag="idea"] {
+    background: #0DBAC6;
+    color: #fff;
+    padding: 3px 5px;
+    line-height: 1em;
+    font-weight: 500;
+}
+span.rm-page-ref[data-tag="stats"] {
+    background: #0DBAC6;
+    color: #fff;
+    padding: 3px 5px;
+    line-height: 1em;
+    font-weight: 500;
+}
+span.rm-page-ref[data-tag="quotes"] {
+    background: #0DBAC6;
+    color: #fff;
+    padding: 3px 5px;
+    line-height: 1em;
+    font-weight: 500;
+}
+span.rm-page-ref[data-tag="TIL"] {
+    background: #0DBAC6;
+    color: #fff;
+    padding: 3px 5px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+
+
+span.rm-page-ref[data-tag="Action Items"] {
+    background: #4747c4;
+    color: #fff;
+    padding: 3px 5px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Inbox"] {
+    color: #4f9d06;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+span.rm-page-ref[data-tag="Journal"] {
+    color: #4f9d06;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+span.rm-page-ref[data-tag="Work_Log"] {
+    color: #4f9d06;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+span.rm-page-ref[data-tag="Tasks"] {
+    color: #4f9d06;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+span.rm-page-ref[data-tag="Writing"] {
+    color: #4f9d06;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+span.rm-page-ref[data-tag="Tools"] {
+    color: #4f069d;
+    padding: 3px 3px;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+/* Andy Matuschak 
+.roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 35% !important;
+}
+*/
+.roam-center {
+    /* sidebar-to-content-ratio */
+    flex-basis: 50% !important;
+}
+
+
+#right-sidebar > div {
+    background-color: var(--roamer-sb-bg);
+}
+/**
+ use variables to control colors, size.
+ delete the part below comment to remove any behaviour
+**/
+:root {
+    /** update colors for dark themes here */
+    --roamer-sb-bg: #f7f8fa;
+    --roamer-sb-card-bg: white;
+    --roamer-sb-card-border: #e4e9ec;
+    --roamer-sb-card-width: 600px;
+    /* leave blank for no prefix */
+    --roamer-sb-card-page-prefix: "P "; 
+}
+
+.roam-center {
+    /* sidebar-to-content-ratio */
+    flex-basis: 50% !important;
+}
+
+
+#right-sidebar > div {
+    background-color: var(--roamer-sb-bg);
+}
+/* sidebar layout */
+#right-sidebar #roam-right-sidebar-content {
+    overflow: auto !important;
+    white-space: normal;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    height: 100%
+}
+
+#right-sidebar #roam-right-sidebar-content > div {
+    min-width: var(--roamer-sb-card-width);
+    background-color: var(--roamer-sb-card-bg);
+    border: 1px solid var(--roamer-sb-card-border) !important;
+    /* card layout */
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 4px;
+    align-self: flex-start;
+    margin-right: 0px !important;
+    height: 100% !important;
+}
+
+#right-sidebar #roam-right-sidebar-content > div > div:nth-child(2) {
+    /* adds scrollbar to card content */
+    overflow: auto;
+    padding: 0 8px 8px 8px !important;
+}
+#right-sidebar {
+  background-color: #f9f9f9 !important;
+}
+
+.roam-log-container .roam-log-page {
+  padding: 10px;
+  border: 1px solid #f9f9f9;
+  border-radius: 5px;
+  background-color: #f9f9f9 !important;
+}
+
+/* Scrollbar improvements */
+div::-webkit-scrollbar-track {
+    background-color: #f9f9f9!important;
+}
+
+div::-webkit-scrollbar-thumb {
+    background-color: #d1dbe2 !important;
+}
+
+/* OSX-like scrollbars 🤓 (width increases on hover)
+ * default width is 6px - increases to 8px on hover
+ * spacing around is 2px (defined by the same-colored border)
+*/
+div::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px;
+    border-radius: 20px;
+}
+div::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+div::-webkit-scrollbar-thumb {
+    background-color: #d1dbe2;
+    border: 3px #fcfcfc solid;
+    border-radius: 20px;
+}
+div::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px #fcfcfc solid;
+}
+
+
+#buffer {
+    z-index: 1;
+}
+
+#buffer > div > div::-webkit-scrollbar-track {
+    background-color: #2f3537 !important;
+}
+
+
+#buffer > div > div::-webkit-scrollbar-thumb {
+    background-color: #d1dbe2 !important;
+}
+
+/* hover scrollbar */
+#buffer > div > div::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 20px;
+}
+#buffer > div > div::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+#buffer > div > div::-webkit-scrollbar-thumb {
+    background-color: #d1dbe2;
+    border: 3px #2f3537 solid;
+    border-radius: 20px;
+}
+#buffer > div > div::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px #2f3537 solid;
+}
+
+
+/* prevents annoying scroll on the sidebar */
+
+html { 
+    overflow: hidden;
+}
+
+/* makes the shortcuts stick edge-to-edge, with spacing on the left */
+.starred-pages-wrapper {
+    padding: 0 0 0 20px !important;
+}
+
+/* makes the seperater above shortcuts full width */
+.starred-pages-wrapper > div:first-child {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dbdbdb !important;
+}
+
+.block-highlight-yellow {
+    background-color: #ffec99;
+}
+
+
+
+/* sticky */
+#right-sidebar #roam-right-sidebar-content > div {
+    position: sticky;
+    left: 16px
+}
+
+/* page numbers */
+#right-sidebar #roam-right-sidebar-content {
+    counter-reset: page;
+}
+#right-sidebar #roam-right-sidebar-content > div > div:nth-child(1):before {
+    counter-increment: page;
+    content: var(--roamer-sb-card-page-prefix) counter(page);
+    padding: 0px 4px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+/** brings card to top on focus */
+#right-sidebar #roam-right-sidebar-content > div:focus-within {
+    z-index: 100;
+}
