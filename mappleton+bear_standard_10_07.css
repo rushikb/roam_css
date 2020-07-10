@@ -651,3 +651,35 @@ html {
 [data-tag="minimal"] + .rm-query .rm-query-title::after {
     content: " #minimal"
 }
+
+/* css to add italics + lines for complex page names */
+.rm-page-ref-link-color .rm-page-ref-link-color {
+    font-style: italic;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color {
+    font-weight: bold;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    text-decoration: overline;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    background-color: rgb(206, 238, 254);
+}
+/* Edit Icons For Hard To Click Items */
+.roam-block > span > div:not(.rm-block-ref):not(.rm-query):after{
+    content: url(#)"🖊";
+    opacity: .5;
+    padding-left:4px;
+    padding-top:1px;
+    height:25px;
+    width:25px;
+    color:white;
+    border-radius:50%;
+    display:inline-block;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+.roam-block > span > div:not(.rm-block-ref):not(.rm-query):hover:after{
+    opacity: 1;
+    background-color: #d2d0cf24;
+}
