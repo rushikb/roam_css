@@ -4,7 +4,7 @@ https://fonts.google.com/specimen/Lato
 https://fonts.google.com/specimen/Open+Sans  */
 
 
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
 
 h1,
@@ -296,60 +296,15 @@ span.rm-page-ref {
 
 /* Projects */
 
-span.rm-page-ref[data-tag^="W/"] {
-    background:  #569C3B;
-    color: #fff;
-    padding: 1px 1px;
-    line-height: 1em;
-    font-weight: 500;
-}
-/* zettels */
-span.rm-page-ref[data-tag^="Z: "] {
-    background: #569C3B;
-    color: #fff;
-    padding: 3px 7px;
-    line-height: 2em;
-    font-weight: 500;
-}
-
 .rm-alias-external:after {
     content: ' 🔗'
 }
 
-/* Custom data tags */
-span.rm-page-ref[data-tag="imp"] {
-    background: #4747c4;
-    color: white;
-    padding: 3px 5px;
-    line-height: 1em;
-    font-weight: 500;
-}
 
-span.rm-page-ref[data-tag="q"] {
-    background: #e80202;
-    color: white;
-    padding: 3px 5px;
-    font-weight: 500;
-    line-height: 1em;
-}
-span.rm-page-ref[data-tag="fix"] {
-    background: #e80202;
-    color: white;
-    padding: 3px 5px;
-    font-weight: 500;
-    line-height: 1em;
-}
-span.rm-page-ref[data-tag="follow_up"] {
-    background: #e80202;
-    color: white;
-    padding: 3px 5px;
-    font-weight: 500;
-    line-height: 1em;
-}
 span.rm-page-ref[data-tag="flag"] {
     background: #e80202;
     color: white;
-    padding: 3px 5px;
+    padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
@@ -357,21 +312,21 @@ span.rm-page-ref[data-tag="flag"] {
 span.rm-page-ref[data-tag="nb"] {
     background: #6a09bf;
     color: white;
-    padding: 3px 5px;
+    padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="p"] {
     background: #40bf09;
     color: white;
-    padding: 3px 5px;
+    padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="fixed"] {
     background: #40bf09;
     color: white;
-    padding: 3px 5px;
+    padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
@@ -380,79 +335,79 @@ span.rm-page-ref[data-tag="fixed"] {
 span.rm-page-ref[data-tag="idea"] {
     background: #0DBAC6;
     color: #fff;
-    padding: 3px 5px;
+    padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 span.rm-page-ref[data-tag="stats"] {
     background: #0DBAC6;
     color: #fff;
-    padding: 3px 5px;
-    line-height: 1em;
-    font-weight: 500;
-}
-span.rm-page-ref[data-tag="quotes"] {
-    background: #0DBAC6;
-    color: #fff;
-    padding: 3px 5px;
+    padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 span.rm-page-ref[data-tag="TIL"] {
     background: #0DBAC6;
     color: #fff;
-    padding: 3px 5px;
+    padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 
-
+span.rm-page-ref[data-tag="quotes"] {
+    background: #0DBAC6;
+    color: #fff;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
 
 span.rm-page-ref[data-tag="Action Items"] {
     background: #4747c4;
     color: #fff;
-    padding: 3px 5px;
+    padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 
 span.rm-page-ref[data-tag="Inbox"] {
     color: #4f9d06;
-    padding: 3px 3px;
+    padding: 1px 1px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1em;
 }
 span.rm-page-ref[data-tag="Journal"] {
     color: #4f9d06;
-    padding: 3px 3px;
+    padding: 1px 1px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1em;
 }
-span.rm-page-ref[data-tag="Work_Log"] {
+span.rm-page-ref[data-tag="Work Log"] {
     color: #4f9d06;
-    padding: 3px 3px;
+    padding: 1px 1px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1em;
 }
 span.rm-page-ref[data-tag="Tasks"] {
     color: #4f9d06;
-    padding: 3px 3px;
+    padding: 1px 1px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1em;
 }
 span.rm-page-ref[data-tag="Writing"] {
     color: #4f9d06;
-    padding: 3px 3px;
+    padding: 1px 1px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1em;
 }
 
 span.rm-page-ref[data-tag="Tools"] {
     color: #4f069d;
-    padding: 3px 3px;
+    padding: 1px 1px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1em;
 }
+
 
 /* Andy Matuschak 
 .roam-center {
@@ -647,4 +602,29 @@ html {
 /** brings card to top on focus */
 #right-sidebar #roam-right-sidebar-content > div:focus-within {
     z-index: 100;
+}
+
+/* Minimal Queries */
+[data-tag="minimal"],
+[data-tag="minimal"] + .rm-query .rm-title-arrow-wrapper,
+[data-tag="minimal"] + .rm-query .zoom-mentions-view {
+    display: none!important;
+}
+
+[data-tag="minimal"] + .rm-query .rm-query-title::after {
+    content: " #minimal"
+}
+
+/* css to add italics + lines for complex page names */
+.rm-page-ref-link-color .rm-page-ref-link-color {
+    font-style: italic;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color {
+    font-weight: bold;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    text-decoration: overline;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    background-color: rgb(206, 238, 254);
 }
