@@ -1702,49 +1702,49 @@ span.rm-page-ref[data-tag='Fleeting Notes'], span[data-link-title^='Fleeting Not
 
 
 span.rm-page-ref[data-tag="Article"] , span[data-link-title^='Article'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Academic"] , span[data-link-title^='Academic'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="How-To"] , span[data-link-title^='How-To'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Art"] , span[data-link-title^='Art'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Fun Fact"] , span[data-link-title^='Fun Fact'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Book"] , span[data-link-title^='Book'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Reading Group"] , span[data-link-title^='Reading Group'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
@@ -1752,7 +1752,7 @@ span.rm-page-ref[data-tag="Reading Group"] , span[data-link-title^='Reading Grou
 }
 
 span.rm-page-ref[data-tag="Reading Group"] , span[data-link-title^='Reading Group'] .rm-page-ref{
-    background: ##ffe366 !important;
+    background: #ffe366 !important;
     color: rgb(0,0,0);
     padding: 1px 1px;
     font-weight: 500;
