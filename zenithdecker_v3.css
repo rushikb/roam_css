@@ -1809,12 +1809,6 @@ span.rm-page-ref[data-tag="Action Items"], span[data-link-title^='Action Items']
     font-weight: 500;
 }
 
-span.rm-page-ref[data-tag="Inbox"] , span[data-link-title^='Inbox'] .rm-page-ref{
-    color: #4f9d06;
-    padding: 1px 1px;
-    font-weight: 600;
-    line-height: 1em;
-}
 span.rm-page-ref[data-tag="Journal"] , span[data-link-title^='Journal'] .rm-page-ref{
     color: #4f9d06;
     padding: 1px 1px;
