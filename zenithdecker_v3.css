@@ -884,6 +884,23 @@ body,
 
 .roam-topbar .bp3-icon-menu-open::before {
   content: "";
+  
+  #roam-right-sidebar-content {
+    flex-direction: row;
+}
+/* Block Reference Number */
+.bp3-button.bp3-minimal:hover {
+  background: #0000004d;
+}
+.bp3-button:not([class*="bp3-intent-"]){
+  color: #797d80
+}
+.rm-block-ref{
+  border-bottom-color: #797d80;
+}
+#roam-right-sidebar-content > div .bp3-icon-plus ~ .bp3-button.bp3-icon-cross {
+	display: block;
+}
 
   /* prevent menu icon from changing on hover */
 }
