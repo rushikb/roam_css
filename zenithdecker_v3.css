@@ -31,14 +31,6 @@
 
 
 
-.roam-center {
-    max-width: none;
-    width: 800px;
-}
-.rm-block-text, textarea { 
-   max-width: 800px !important;
-}
-
 
 ::selection {
   background: #8fdcf3ba;
