@@ -23,6 +23,8 @@
   --main-background-color: hsl(210, 9%, 98%);
   --body-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
+  --page-width: 800px;
+  --page-side-width: 650px;
 }
 
 .roam-sidebar-container {
