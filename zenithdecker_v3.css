@@ -23,7 +23,7 @@
   --main-background-color: hsl(210, 9%, 98%);
   --body-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
-  --page-order: row-reverse !important;
+  --page-order: row-reverse;
 }
 
 .roam-sidebar-container {
