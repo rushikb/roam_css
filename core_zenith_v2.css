@@ -27,14 +27,24 @@
 a {
   color: #017530;
 }
+/* don't limit the block width */
+ .rm-block-text {
+     max-width: none!important;
+ }
+ #roam-right-sidebar-content > * > div:last-child:not(:first-child) {
+     width: var(--page-side-width);
+ } 
 
-.roam-center {
-    max-width: none;
-    width: 800px;
-}
-.rm-block-text, textarea { 
-   max-width: 800px !important;
-}
+ #roam-right-sidebar-content .roam-block-container{
+     max-width: var(--page-side-width);
+ }
+ .ghost{
+     opacity: .5;
+     background: #C8EBFB;
+ }
+ .highlight{
+     background-color: #f9c7c8 !important;
+ }
 
 html, body, .roam-app {
     background-color: var(--bg-color) !important;
@@ -1483,16 +1493,16 @@ code {
 /* Projects */
 
 span.rm-page-ref[data-tag^="W/"] , span[data-link-title^='W/'] .rm-page-ref{
-    background:  #569C3B;
-    color: #fff;
+    background:  #569C3B !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 /* zettels */
 span.rm-page-ref[data-tag^="Z: "] {
-    background: #569C3B;
-    color: #fff;
+    background: #569C3B !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
@@ -1500,54 +1510,54 @@ span.rm-page-ref[data-tag^="Z: "] {
 
 /* Custom data tags */
 span.rm-page-ref[data-tag="imp"], span[data-link-title^='imp'] .rm-page-ref {
-    background: #4747c4;
-    color: white;
+    background: #4747c4 !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 
 span.rm-page-ref[data-tag="q"], span[data-link-title^='q'] .rm-page-ref {
-    background: #e80202;
-    color: white;
+    background: #e80202 !important;
+    color: #fff !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="fix"], span[data-link-title^='fix'] .rm-page-ref {
-    background: #e80202;
-    color: white;
+    background: #e80202 !important;
+    color: #fff !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="follow_up"], span[data-link-title^='follow_up'] .rm-page-ref {
-    background: #e80202;
-    color: white;
+    background: #e80202 !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 
 span.rm-page-ref[data-tag="Backlog"], , span[data-link-title^='Backlog'] .rm-page-ref {
-    background: #e80202;
-    color: white;
+    background: #e80202 !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 
 span.rm-page-ref[data-tag="To Do"] , span[data-link-title^='To Do'] .rm-page-ref {
-    background: #e80202;
-    color: white;
+    background: #e80202 !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 
 span.rm-page-ref[data-tag="Doing"], span[data-link-title^='Doing'] .rm-page-ref {
-    background: #2196F3;
-    color: white;
+    background: #2196F3 !important; 
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
@@ -1555,8 +1565,8 @@ span.rm-page-ref[data-tag="Doing"], span[data-link-title^='Doing'] .rm-page-ref 
 
 
 span.rm-page-ref[data-tag="Archive"] , span[data-link-title^='Archive'] .rm-page-ref{
-    background: #FFC107;
-    color: rgb(0,0,0);
+    background: #FFC107 !important;
+    color: rgb(0,0,0) !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
@@ -1564,30 +1574,30 @@ span.rm-page-ref[data-tag="Archive"] , span[data-link-title^='Archive'] .rm-page
 
 
 span.rm-page-ref[data-tag="flag"], span[data-link-title^='flag'] .rm-page-ref {
-    background: #e80202;
-    color: white;
+    background: #e80202 !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 
 span.rm-page-ref[data-tag="nb"], span[data-link-title^='nb'] .rm-page-ref {
-    background: #6a09bf;
-    color: white;
+    background: #6a09bf !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="p"] , span[data-link-title^='p'] .rm-page-ref{
-    background: #40bf09;
-    color: white;
+    background: #40bf09 !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="fixed"] , span[data-link-title^='fixed'] .rm-page-ref{
-    background: #40bf09;
-    color: white;
+    background: #40bf09 !important;
+    color: white !important;
     padding: 1px 1px;
     font-weight: 500;
     line-height: 1em;
@@ -1595,76 +1605,76 @@ span.rm-page-ref[data-tag="fixed"] , span[data-link-title^='fixed'] .rm-page-ref
 
 
 span.rm-page-ref[data-tag="idea"] , span[data-link-title^='idea'] .rm-page-ref{
-    background: #0DBAC6;
-    color: #fff;
+    background: #0DBAC6 !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 span.rm-page-ref[data-tag="stats"], span[data-link-title^='stats'] .rm-page-ref {
-    background: #0DBAC6;
-    color: #fff;
+    background: #0DBAC6 !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 span.rm-page-ref[data-tag="TIL"]{
-    background: #0DBAC6;
-    color: #fff;
+    background: #0DBAC6 !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 
 span.rm-page-ref[data-tag="quotes"] , span[data-link-title^='quotes'] .rm-page-ref{
-    background: #0DBAC6;
-    color: #fff;
+    background: #0DBAC6 !important;
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 
 span.rm-page-ref[data-tag="Action Items"], span[data-link-title^='Action Items'] .rm-page-ref {
-    background: #4747c4;
-    color: #fff;
+    background: #4747c4 !important; 
+    color: #fff !important;
     padding: 1px 1px;
     line-height: 1em;
     font-weight: 500;
 }
 
 span.rm-page-ref[data-tag="Inbox"] , span[data-link-title^='Inbox'] .rm-page-ref{
-    color: #4f9d06;
+    color: #4f9d06 !important;
     padding: 1px 1px;
     font-weight: 600;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Journal"] , span[data-link-title^='Journal'] .rm-page-ref{
-    color: #4f9d06;
+    color: #4f9d06 !important;
     padding: 1px 1px;
     font-weight: 600;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Work Log"], span[data-link-title^='Work Log'] .rm-page-ref {
-    color: #4f9d06;
+    color: #4f9d06 !important;
     padding: 1px 1px;
     font-weight: 600;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Tasks"] , span[data-link-title^='Tasks'] .rm-page-ref{
-    color: #4f9d06;
+    color: #4f9d06 !important;
     padding: 1px 1px;
     font-weight: 600;
     line-height: 1em;
 }
 span.rm-page-ref[data-tag="Writing"] , span[data-link-title^='Writing'] .rm-page-ref{
-    color: #4f9d06;
+    color: #4f9d06 !important;
     padding: 1px 1px;
     font-weight: 600;
     line-height: 1em;
 }
 
 span.rm-page-ref[data-tag="Tools"] , span[data-link-title^='Tools'] .rm-page-ref{
-    color: #4f069d;
+    color: #4f069d !important;
     padding: 1px 1px;
     font-weight: 600;
     line-height: 1em;
