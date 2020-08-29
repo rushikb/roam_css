@@ -1,30 +1,45 @@
-/* ------------- WARNING - Super 1.0, messy, broken rubbish CSS in here -------------  */
-/* ------------- Customer support not included :) -------------  */
+/* ------------- Warning - Super v1.5, bad css and bugs abound ----------------------------  */
+/* ------------This is based on Maggie's Zenithdecker theme -------------------------------  */
+/* -----https://github.com/theianjones/roam-research-themes/blob/master/zenithdecker.css---  */
+/* ------------I have added in azlen's core.css for better mobile support -----------------  */
+/* ------------- Customer support not included :) -----------------------------------------  */
+
+/* IMPORT AZLEN CORE THEME */
+@import url('https://azlen.github.io/roam-themes/core.css');
+
 
 :root {
-  --page-width: 800px;
-  --page-side-width: 500px;
-  --header-font: "Lato", sans-serif;
-  --body-font: "Open Sans", sans-serif;
+  --page-width: 720px;
+  --page-order: row-reverse;
+  --header-font: "Open Sans", sans-serif;
+  --body-font: "Inter", sans-serif;
+
   --font-size: 1.02em;
-  --bg-color: #eef3f3;
+
+  /* --bg-color: #eef3f3; */
+  --bg-color: #f9fafa;
   --page-color: rgba(255, 255, 255, 0.95);
+
   --text-color: #49556f;
   --light-text-color: #5c7496;
   --icon-color: #6a76a1;
   --bullet-color: rgba(0, 0, 0, 0.2);
+
   --page-shadow: 0px 6px 10px rgba(43, 45, 47, 0.05);
   --block-shadow: 0px 2px 4px rgba(90, 99, 104, 0.05);
-  --color-primary: #5c05ae;
+
+  --color-primary: 236, 111, 53;
   --color-primary-highlight: #ffdd99b8;
-  --color-primary-contrast: #ffffff;
-  --color-secondary: #8a3cc8;
+  --color-primary-contrast: #9aabd0;
+  --color-secondary: 138, 60, 200;
   --color-secondary-contrast: #ffffff;
+
   --border-color: rgba(0, 0, 0, 0.08);
   --subtle-border-color: rgba(0, 0, 0, 0.05);
   --main-background-color: hsl(210, 9%, 98%);
   --body-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
+  --light-blue-selection: 144, 221, 244;
 }
 
 .roam-sidebar-container {
@@ -32,33 +47,23 @@
 }
 
 .roam-center {
-  max-width: var(--page-width);
+  max-width: 820px;
 }
 
 ::selection {
-  background: #8fdcf3ba;
+  background: rgba(var(--light-blue-selection)) !important;
 
   /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: #8fdcf3ba;
+  background: rgba(var(--light-blue-selection)) !important;
 
   /* Gecko Browsers */
 }
-
 .block-highlight-blue {
-  background: #8fdcf3ba;
+  background: rgba(var(--light-blue-selection)) !important;
 }
-
-#buffer.tall {
-  height: calc(100vh - 50px) !important;
-}
-
-.check-container {
-  padding-right: 4px;
-}
-
 span.rm-page-ref {
   border-radius: 2px;
 
@@ -73,14 +78,13 @@ span.rm-page-ref {
   /* required for fixing azo */
 }
 
-.center-proj {
-  text-align: center;
+#buffer.tall {
+  height: calc(100vh - 50px) !important;
 }
 
-div#buffer {
-  display: none;
-
-  visibility: hidden;
+/* NOT SURE WHAT THESE DO */
+.center-proj {
+  text-align: center;
 }
 
 .zoom-path-view {
@@ -97,48 +101,45 @@ div#buffer {
   background: white;
 }
 
+/* REMOVE SHORTCUT STAR ICON IN SIDEBAR */
+
 span.bp3-icon-small.bp3-icon-star {
   display: none;
 
   visibility: hidden;
 }
 
+/* NOT SURE WHAT THIS DOES */
 .rm-embed-inner-block-hide {
   margin-left: -40px;
 }
 
-#right-sidebar > div {
-  border: none;
-}
-
+/* INCREASE H3 SIZE */
 .rm-level3 {
   font-weight: 400;
 
-  font-size: 1.3em;
 }
-
-.rm-page-ref {
-  color: #9aabd0;
-}
-
-.rm-page-ref-link-color {
-  color: var(--color-primary);
-
-  font-weight: 600;
-}
-
+/* hyperlinks */
 a {
-  color: #8a3cc8;
+  color: rgb(var(--color-secondary));
 }
+/* page ref names inside brackets, potential duplicate rule*/
+.rm-page-ref.rm-page-ref-link-color{
+  color:rgb(var(--color-primary)) !important
+  font-weight: 600 !important;
 
+}
+/* NOT SURE WHAT THIS DOES */
 .intercom-app,
 .intercom-launcher-frame,
 #intercom-container {
   display: none !important;
 }
 
+/* -------------------------- */
+/*      EMBEDDING BLOCKS      */
+/* -------------------------- */
 .rm-embed-container {
-  background-color: white;
 
   padding: 0.8em;
 
@@ -149,22 +150,31 @@ a {
   box-shadow: var(--block-shadow);
 }
 
+/* block ref count possible duplicate */
 .block-ref-count-button {
-  color: var(--color-primary) !important;
+  color: rgb(var(--color-primary)) !important;
 
   font-weight: 800;
 
   top: -10px;
 }
+/* override core theme backgournd-color */
+.rm-page-ref-tag {
+  background-color: transparent !important;
+  font-weight:normal !important;
+}
 
+
+/* targets counter bubble for referenced blocks*/
 .bp3-popover-target button {
-  border: 1px solid var(--color-primary) !important;
+  border: 1px solid rgb(var(--color-primary)) !important;
 
   border-radius: 6em !important;
 
   opacity: 60% !important;
 
   padding: 0 !important;
+  margin-right: 5px !important;
 }
 
 /* Start of "Better Roam" theming */
@@ -264,6 +274,15 @@ h1.level2 {
 strong {
   font-weight: 700 !important;
 }
+
+
+
+
+
+
+
+
+
 
 /* ----- Start of my Theming -----*/
 
@@ -431,7 +450,7 @@ div.roam-sidebar-container.noselect > div > div {
 }
 
 .kanban-card {
-  background-color: white;
+  background-color: var(--page-color);
 
   margin: 8px;
 
@@ -439,7 +458,7 @@ div.roam-sidebar-container.noselect > div > div {
 
   padding: 10px;
 
-  border-radius: 2px;
+  border-radius: 2px !important;
 
   line-height: 1.3em;
 }
@@ -447,17 +466,18 @@ div.roam-sidebar-container.noselect > div > div {
 .kanban-title {
   text-align: center;
 
-  font-weight: 600;
+  font-weight: 600 !important;
 
   font-size: 1.1em;
 
   opacity: 80%;
 
-  color: #485f6f;
 
-  padding-top: 8px;
+  padding-top: 8px !important;
 
   border-bottom: 1px solid #c5d1d8;
+  background:transparent !important;
+  color:#485f6f !important;
 }
 
 .kanban-column {
@@ -474,39 +494,29 @@ div.roam-sidebar-container.noselect > div > div {
 
 /* ------ Block Refs ------ */
 
+/*
+* ⌗ for block refs 🚀
+*/
 .rm-block-ref::before {
-  content: "";
-
-  display: inline-block;
-
-  width: 2px;
-
-  border-radius: 40px;
-
-  height: 12px;
-
-  background: #ff913c;
-
-  margin-right: 8px;
-
-  text-decoration: none;
+    content: '⌗';
+    display: inline-block;
+    color: #4d94ff;
+    margin-right: 5px;
+    top: -2px;
+    position: relative;
 }
-
 .rm-block-ref {
-  border-bottom: none;
-
-  font-size: 1em;
-
-  color: #515e70;
+    display: inline-flex;
+    border-bottom: none;
+    font-size: 1em;
+    color: #627a9d;
+    background-color: #f5f7fa;
 }
 
 .rm-block-ref:hover {
-  background: none;
-
-  cursor: pointer;
-
-  text-decoration: none;
+    cursor: pointer;
 }
+
 
 .checkmark {
   background: #fff;
@@ -599,7 +609,7 @@ body,
 
 .rm-alias-external,
 .rm-alias-external:hover {
-  color: var(--color-secondary) !important;
+  color: rgb(var(--color-secondary)) !important;
 
   font-weight: 600;
 }
@@ -619,11 +629,11 @@ body,
 }
 
 .roam-article > div {
-  padding: 30px 50px 50px 50px;
+  /* padding: 30px 50px 50px 50px; */
 
   background: var(--page-color);
 
-  box-shadow: var(--page-shadow);
+  box-shadow: var(--page-shadow) !important;
 
   border: 1px solid #e5ecf1;
 
@@ -709,7 +719,7 @@ body,
 
   display: flex;
 
-  flex-direction: row-reverse;
+  flex-direction: row;
 
   align-items: flex-start;
 
@@ -843,7 +853,7 @@ body,
 }
 
 #roam-right-sidebar-content > div a:hover {
-  color: var(--color-primary);
+  color: rgb(var(--color-primary));
 
   text-decoration: none;
 
@@ -893,282 +903,7 @@ body,
   /* prevent menu icon from changing on hover */
 }
 
-/* -------------------------- */
 
-/*        LEFT SIDEBAR        */
-
-/* -------------------------- */
-
-/* HIDE LOGO*/
-
-#roam-sidebar-logo {
-  display: none;
-}
-
-.roam-sidebar-content * {
-  color: var(--icon-color) !important;
-}
-
-.starred-pages > a > .page:hover {
-  background-color: transparent !important;
-
-  color: var(--primary-color) !important;
-}
-
-.starred-pages > a {
-  padding-left: 0 !important;
-}
-
-.starred-pages-wrapper {
-  margin-left: 10px;
-}
-
-.log-button * {
-}
-
-.log-button {
-  background: none !important;
-}
-
-.log-button:hover,
-.log-button:hover * {
-  color: var(--text-color) !important;
-}
-
-.roam-sidebar-content {
-  color: var(--text-color) !important;
-}
-
-.roam-topbar {
-  opacity: 1 !important;
-
-  background-color: transparent !important;
-
-  margin-top: 70px;
-
-  width: 20px;
-
-  display: inline-block;
-
-  padding-left: 0px !important;
-
-  position: relative !important;
-
-  position: sticky !important;
-
-  left: 0px;
-
-  transition: none !important;
-
-  z-index: 999;
-
-  border: none !important;
-}
-
-.roam-sidebar-container > .roam-sidebar-content::before {
-  content: "";
-
-  position: absolute;
-
-  top: -70px;
-
-  right: -30px;
-
-  width: 400px;
-
-  height: 100vh;
-
-  opacity: 0.7;
-
-  z-index: -1;
-}
-
-.roam-sidebar-container {
-  border: none !important;
-
-  top: 0px !important;
-
-  padding-top: 70px;
-
-  visibility: hidden;
-
-  /* hide background */
-
-  transition: all 0.25s ease-out;
-
-  width: 240px !important;
-
-  padding-right: 40px;
-
-  padding-left: 10px;
-
-  backdrop-filter: blur(5px);
-
-  background: #000000 !important;
-}
-
-.roam-sidebar-container > .roam-sidebar-content {
-  display: block !important;
-
-  height: auto !important;
-
-  visibility: visible;
-
-  /* show contents */
-}
-
-.roam-sidebar-container > .roam-sidebar-content > * {
-  opacity: 0 !important;
-
-  transition: opacity 0.6s ease-out !important;
-}
-
-.roam-sidebar-container:not([style*="top: 0px"]) {
-  left: -170px !important;
-}
-
-.roam-sidebar-container[style*="top: 0px"] > .roam-sidebar-content > * {
-  opacity: 1 !important;
-}
-
-.roam-sidebar-container[style*="top: 0px"] + .roam-main {
-  padding-left: 180px;
-}
-
-/* fix height with absolute positioning of email address */
-
-.roam-sidebar-content > .flex-h-box {
-  height: 40px;
-}
-
-.roam-sidebar-content > .flex-h-box > * {
-  pointer-events: auto;
-}
-
-.roam-sidebar-content > .flex-h-box ~ * {
-  pointer-events: all;
-}
-
-.roam-sidebar-content > .flex-h-box > .flex-h-box {
-  position: absolute;
-
-  left: 45px;
-
-  top: 5px;
-}
-
-.roam-topbar > .flex-h-box {
-  width: 50px;
-
-  flex-direction: column;
-
-  height: 1px !important;
-
-  align-items: start !important;
-
-  text-align: center;
-
-  position: -webkit-sticky !important;
-
-  position: sticky !important;
-
-  left: 0px;
-}
-
-.roam-topbar > .flex-h-box > * {
-  flex: 0 0 20px !important;
-
-  margin: auto !important;
-
-  max-width: 20px !important;
-
-  max-height: 20px !important;
-}
-
-.roam-topbar > div > .bp3-button:first-child {
-  align-self: start !important;
-
-  position: fixed !important;
-
-  left: 16px;
-
-  top: 78px;
-
-  z-index: 9999999 !important;
-}
-
-.roam-topbar > div > *:nth-child(2) {
-  margin-top: 20px !important;
-}
-
-.rm-reference-item {
-  background-color: transparent !important;
-}
-
-.rm-ref-page-view-title a {
-  color: var(--light-text-color);
-
-  font-size: 1.1em;
-
-  text-decoration: none !important;
-}
-
-/* SOME BLACKMAGIC TO GET SEARCH ICON TO FUNCTION LIKE OTHER BUTTONS */
-
-.roam-topbar .bp3-icon-search {
-  padding: 4px;
-
-  border-radius: 3px;
-
-  margin: 0 !important;
-
-  cursor: pointer;
-}
-
-/* style contains `200px` if search bar is NOT selected */
-
-/* hovering search bar in this mode == hovering icon itself */
-
-/* we must however have the search bar in front of the icon (but invisible) so that it can focus on click */
-
-/* very hacky :P */
-
-.rm-find-or-create-wrapper[style*="200px"]:hover .bp3-icon-search,
-.roam-topbar .bp3-icon-search:hover {
-  background-color: rgba(var(--color-primary), 0.4);
-
-  color: var(--text-color) !important;
-}
-
-.roam-topbar .bp3-icon-search svg {
-  padding: 1px;
-}
-
-/* fix centering on calendar icon */
-
-.roam-topbar .bp3-icon-calendar {
-  margin: 0 !important;
-}
-
-.rm-find-or-create-wrapper {
-  width: 20px !important;
-}
-
-.rm-find-or-create-wrapper .bp3-overlay {
-  position: fixed;
-
-  top: 50px;
-
-  left: calc(50% - 325px);
-
-  width: 650px;
-}
-
-.roam-body-main {
-  display: block;
-
-  width: 100%;
-}
 
 /* -------------------------- */
 
@@ -1479,7 +1214,7 @@ body > .bp3-portal .bp3-text-small {
 
 .roam-center svg > line[style*="stroke: red"],
 #roam-right-sidebar-content > div svg > line[style*="stroke: red"] {
-  stroke: var(--color-secondary) !important;
+  stroke: rgb(var(--color-secondary)) !important;
 }
 
 .roam-center svg > rect[style*="fill: rgba(55, 141, 240, 0.5)"],
@@ -1487,9 +1222,9 @@ body > .bp3-portal .bp3-text-small {
   > div
   svg
   > rect[style*="fill: rgba(55, 141, 240, 0.5)"] {
-  fill: var(--color-secondary) !important;
+  fill: rgb(var(--color-secondary)) !important;
 
-  stroke: var(--color-secondary) !important;
+  stroke: rgb(var(--color-secondary)) !important;
 }
 
 /* -------------------------- */
@@ -1654,17 +1389,116 @@ body > .bp3-portal .bp3-text-small {
 }
 
 /* ------------------------ */
-/* ------------------------ */
-/* ------------------------ */
-
-/* ------------ Custom data tags ------------ */
-
-
-/* ------------------------ */
-/* ------------------------ */
+/* -----MY-MISC-STYLES----- */
 /* ------------------------ */
 
-/* ------------ Custom data tags ------------ */
+
+
+
+/* OVERRIDE VERSION BULLET*/
+.version-bullet {
+    color: white !important;
+}
+
+}
+
+/* -------------------------- */
+/*         MOBILE             */
+/* -------------------------- */
+
+
+/* get more page width on mobile */
+@media only screen and (max-width: 600px) {
+  :root {
+  --page-width: 600px;}
+
+  .roam-article {
+    padding-right: 0px !important;
+
+    padding-left: 0px !important;
+  }
+}
+
+
+/* OVERRIDE SAVING DOT */
+
+.rm-saving-icon .rm-synced {
+    background-color: #0f9960 !important;
+}
+
+.rm-saving-icon .rm-saving-remote {
+    background-color: #ec6f35 !important;
+}
+/* ENLARGE SIZE OF CARROT */
+
+.rm-caret{
+  transform: scale(1.5);
+}
+/* EXTERNAL REFS */
+
+.rm-alias-external,
+.rm-alias-external:hover {
+  padding: 3px 4px;
+  line-height: 1.4em;
+  border-radius: 4px;
+}
+/* ----- word versioning styling -----*/
+
+div:not(.bp3-datepicker-month-select):not(.bp3-datepicker-year-select)>select {
+  border: 2px dashed rgb(var(--color-primary)) !important ;
+  border-radius: 4px;
+  font-style: italic;
+  /*padding: 3px 7px;*/
+}
+
+/* ----- Side Bar styling -----*/
+
+.starred-pages > a {
+  padding-left: 0 !important;
+}
+
+.starred-pages-wrapper {
+  margin-left: 15px;
+}
+
+/* ----- Side Bar top bar styling -----*/
+
+.flex-h-box.top-row:hover{
+  	background-color: var(--color-primary-highlight) !important;
+	border-radius: 4px;
+}
+.flex-h-box.top-row .bp3-icon-menu-closed{
+  margin-top:12px !important;
+}
+/* ----- in-line code styling -----*/
+
+code{
+  border-radius: 4px !important;
+}
+
+/* remove help button border */
+
+#buffer .bp3-button.bp3-minimal{
+  border:none !important;
+}
+
+/* diagram */
+.roam-center > div > div > div svg :not(.katex) {
+    background-color: var(--page-color) !important;
+}
+/* header margin */
+h1.rm-title-display, .rm-title-textarea {
+    margin-left: 0px;
+}
+/* lightly style external aliases */
+.rm-alias-external,
+.rm-alias-external:hover {
+  background-color: rgba(var(--color-secondary), .1) !important;
+
+  padding: 3px 4px;
+  line-height: 1.4em;
+  border-radius: 4px;
+}
 /* Custom data tags */
 
 /* Custom data tags based on page_name headers*/
