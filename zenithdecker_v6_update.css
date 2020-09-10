@@ -1511,6 +1511,12 @@ body > .bp3-portal .bp3-text-small {
 
 /* -------------------------- */
 
+/* -------------------------- */
+
+/*       SEARCH PAGE          */
+
+/* -------------------------- */
+
 #all-pages-search {
   max-height: calc(100% - 50px);
 
@@ -1665,7 +1671,6 @@ body > .bp3-portal .bp3-text-small {
 .rm-all-pages .bp3-input.focused {
   border: 1px solid rgb(var(--color-primary)) !important;
 }
-
 /* ------------------------ */
 /* ------------------------ */
 /* ------------------------ */
