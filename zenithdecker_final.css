@@ -768,7 +768,7 @@ body,
 
   padding-bottom: 50px !important;
 
-  width: 600px;
+  width: var(--page-side-width) !important;
 
   border-top: 0;
 }
