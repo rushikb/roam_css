@@ -43,8 +43,8 @@
   --light-blue-selection: 144, 221, 244;
   
   --highlight-font-color: #F4F4F4;
-  --highlight-background-color: #34641F;
-  --highlight-link-color: #F4F4F4;
+  --highlight-background-color: #ffff00;
+  --highlight-link-color: #808080;
   --highlight-padding: 4px 5px 4px 5px;
 }
 
