@@ -41,6 +41,11 @@
   --body-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
   --light-blue-selection: 144, 221, 244;
+  
+  --highlight-font-color: #F4F4F4;
+  --highlight-background-color: #34641F;
+  --highlight-link-color: #F4F4F4;
+  --highlight-padding: 4px 5px 4px 5px;
 }
 
 .roam-sidebar-container {
@@ -358,6 +363,32 @@ textarea {
 
 .rm-pomodoro::first-letter {
   margin-right: 8px;
+}
+/* ------------------------------- */
+/*    #TEXT & BLOCK #HIGHLIGHTS    */
+/* ------------------------------- */
+/* text highlighting */
+.roam-highlight {
+    background-color: var(--highlight-background-color);
+    color: var(--highlight-font-color);
+    border-radius: 0px;
+    padding: var(--highlight-padding);
+}
+/* INTERNAL PAGE LINK TEXT COLOR */
+.roam-highlight .rm-page-ref-link-color {
+    color: var(--highlight-link-color);
+}
+/* BLOCK SELECTION HIGHLIGHTING */
+.block-highlight-blue {
+    background-color: var(--block-highlight);
+}
+/* BLOCK HIGHLIGHTING */
+.block-highlight-yellow {
+    background-color: var(--block-highlight-bg);
+}
+/* EMBED BLOCK HIGHLIGHTING */
+.rm-embed-container {
+    background-color: var(--embed-container-bg);
 }
 
 /* ----- Query styling -----*/
