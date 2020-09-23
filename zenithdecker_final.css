@@ -20,6 +20,8 @@
   /* --bg-color: #eef3f3; */
   --bg-color: #f9fafa;
   --page-color: rgba(255, 255, 255, 0.95);
+  --select_bg: #cecece
+	
 
   --text-color: #49556f;
   --light-text-color: #5c7496;
@@ -54,14 +56,13 @@
 
 
   /* Highlight issue */
+
+.bp3-elevation-3 .dont-unfocus-block[style*="background-color: rgb(213, 218, 223);"],
 .bp3-popover-content .flex-v-box.rm-menu-item[style*="background-color: rgb(213, 218, 223);"] {
     /* selected row color */
-    background-color:  #f9f9f9 !important;
+    background-color: var(--select_bg) !important;
 }
 
-.roam-center {
-  max-width: var(--page-width);
-}
 
 ::selection {
   background: rgba(var(--light-blue-selection)) !important;
