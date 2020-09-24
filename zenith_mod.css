@@ -1,0 +1,334 @@
+/* IMPORT CORE THEME */
+@import url('https://azlen.github.io/roam-themes/core.css');
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');	
+
+:root {	
+    --page-width: 800px;
+    --page-order: row-reverse; /* new pages show up to the right */
+    /*--page-order: row; /* new pages show up to the left */
+    --page-side-width: 400px;
+    
+    --header-font: "Lato", "Inter", sans-serif;	
+    --body-font: "Open Sans", "Inter", sans-serif;	
+    --subtle-border-color: rgba(0, 0, 0, 0.05);
+    --bg-color: #EEEEEE;	
+    --page-color: rgba(255, 255, 255, 0.95);	
+    	
+    --text-color: #49556f;
+    --icon-color: #6a76a1;
+    --bullet-color: rgba(0, 0, 0, 0.2);	
+    	
+    --page-shadow: 0px 8px 14px rgba(0, 0, 0, 0.05);	
+    	
+    --color-primary: #5c05ae;	
+    --color-primary-contrast: #8a3cc8;	
+    --color-secondary: #8a3cc8 !important;
+
+    --color-secondary-contrast: #8a3cc8;	
+}
+
+
+
+.roam-center {
+    max-width: 90%;
+    width: 850px !important;
+}
+.rm-block-text { 
+   max-width: 90% !important;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+
+  font-size: 3em;
+}
+
+div,
+textarea {
+  font-weight: 400;
+
+  color: #3f4758;
+
+  font-family: var(--body-font);
+
+  line-height: 1.7em !important;
+
+  font-size: 1.001em;
+}
+/* hyperlinks */
+a {
+  color: var(--color-secondary);
+}
+
+
+
+.rm-pomodoro {
+  background: #fff !important;
+
+  color: #ff4747 !important;
+
+  padding: 4px 14px;
+
+  line-height: 2em;
+
+  font-weight: 600;
+
+  border-radius: 2em;
+
+  border: 1px solid #ff474770;
+}
+
+.rm-title-display,
+.rm-title-textarea {
+  line-height: 1.2em !important;
+
+  font-family: var(--header-font);
+}
+
+.rm-title-display {
+  margin-top: 0.6em !important;
+}
+
+
+
+.rm-page-ref {
+  color: #4c92c8;
+}
+
+.rm-page-ref-link-color {
+  color: var(--color-primary) !important;
+
+  font-weight: 600;
+}
+
+a {
+  color: #017530;
+}
+/* ------------ Custom data tags ------------ */
+/* Custom data tags */
+
+/* Custom data tags based on page_name headers*/
+
+/* Projects */
+
+span.rm-page-ref[data-tag^="W/"] , span[data-link-title^='W/'] .rm-page-ref{
+    background:  #569C3B !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+/* zettels */
+span.rm-page-ref[data-tag^="Z: "] {
+    background: #569C3B !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+/* Custom data tags */
+span.rm-page-ref[data-tag="imp"], span[data-link-title^='imp'] .rm-page-ref {
+    background: #4747c4 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="q"], span[data-link-title^='q'] .rm-page-ref {
+    background: #e80202 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="fix"], span[data-link-title^='fix'] .rm-page-ref {
+    background: #e80202 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="follow_up"], span[data-link-title^='follow_up'] .rm-page-ref {
+    background: #e80202 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+span.rm-page-ref[data-tag="Backlog"], span[data-link-title^='Backlog'] .rm-page-ref {
+    background: #e80202 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+span.rm-page-ref[data-tag="To Do"] , span[data-link-title^='To Do'] .rm-page-ref {
+    background: #e80202 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+span.rm-page-ref[data-tag="Doing"], span[data-link-title^='Doing'] .rm-page-ref {
+    background: #2196F3 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+
+span.rm-page-ref[data-tag="Archive"] , span[data-link-title^='Archive'] .rm-page-ref{
+    background: #FFC107 !important;
+    color: rgb(0,0,0) !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+
+span.rm-page-ref[data-tag="flag"], span[data-link-title^='flag'] .rm-page-ref {
+    background: #e80202 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+span.rm-page-ref[data-tag="nb"], span[data-link-title^='nb'] .rm-page-ref {
+    background: #6a09bf !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="p"] , span[data-link-title^='p'] .rm-page-ref{
+    background: #40bf09 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="fixed"] , span[data-link-title^='fixed'] .rm-page-ref{
+    background: #40bf09 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+
+span.rm-page-ref[data-tag="idea"] , span[data-link-title^='idea'] .rm-page-ref{
+    background: #0DBAC6 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+span.rm-page-ref[data-tag="stats"], span[data-link-title^='stats'] .rm-page-ref {
+    background: #0DBAC6 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+span.rm-page-ref[data-tag="TIL"]{
+    background: #0DBAC6 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="quotes"] , span[data-link-title^='quotes'] .rm-page-ref{
+    background: #0DBAC6 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Action Items"], span[data-link-title^='Action Items'] .rm-page-ref {
+    background: #4747c4 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
+span.rm-page-ref[data-tag="Work Log"], span[data-link-title^='Work Log'] .rm-page-ref {
+    color: #4f9d06 !important;
+    padding: 1px 1px !important;
+    font-weight: 600;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="Tasks"] , span[data-link-title^='Tasks'] .rm-page-ref{
+    color: #4f9d06 !important;
+    padding: 1px 1px;
+    font-weight: 600;
+    line-height: 1em;
+}
+span.rm-page-ref[data-tag="Writing"] , span[data-link-title^='Writing'] .rm-page-ref{
+    color: #4f9d06 !important;
+    padding: 1px 1px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+span.rm-page-ref[data-tag="Tools"] , span[data-link-title^='Tools'] .rm-page-ref{
+    color: #4f069d !important;
+    padding: 1px 1px;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+
+
+/* Minimal Queries */
+[data-tag="minimal"],
+[data-tag="minimal"] + .rm-query .rm-title-arrow-wrapper,
+[data-tag="minimal"] + .rm-query .zoom-mentions-view {
+    display: none!important;
+}
+
+[data-tag="minimal"] + .rm-query .rm-query-title::after {
+    content: " #minimal"
+}
+
+/* css to add italics + lines for complex page names */
+.rm-page-ref-link-color .rm-page-ref-link-color {
+    font-style: italic;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color .rm-page-ref-link-color {
+    font-weight: bold;
+}
+.rm-page-ref-link-color .rm-page-ref-link-color:hover {
+    text-decoration: overline;
+}
+
+.rm-alias-external:after {
+    content: '🔗'
+}
+
+/* TREE LINE */
+.block-border-left {
+  border-left-color: var(--subtle-border-color) !important;
+}
+.controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: #e5e9f2;
+}
