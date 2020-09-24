@@ -585,100 +585,68 @@ div.roam-sidebar-container.noselect > div > div {
 }
 
 /* ------ Block Refs ------ */
-
+/*
+* ⌗ for block refs 🚀
+*/
 .rm-block-ref::before {
-
-  content:'';
-
-  display: inline-block;
-
-  width: 2px;
-
-  border-radius: 40px;
-
-  height: 12px;
-
-  background: #ff913c;
-
-  margin-right: 8px;
-
-  text-decoration: none;
-
+    content: '⌗';
+    display: inline-block;
+    color: #4d94ff;
+    margin-right: 5px;
+    top: -2px;
+    position: relative;
 }
-
 .rm-block-ref {
-
-  border-bottom: none;
-
-  font-size: 1em;
-
-  color: #515e70;
-
+    display: inline-flex;
+    border-bottom: none;
+    font-size: 1em;
+    color: #627a9d;
+    background-color: #f5f7fa;
 }
 
 .rm-block-ref:hover {
-
-  background: none;
-
-  cursor: pointer;
-
-  text-decoration: none;
-
+    cursor: pointer;
 }
 
+
 .checkmark {
-
   background: #fff;
-
 }
 
 .check-container input:checked ~ .checkmark {
-
   background: #33bdea;
-
 }
 
 .check-container input:checked ~ .checkmark:after {
-
   border-color: #fff;
-
 }
 
 .roam-body .roam-app .roam-sidebar-container {
-
   background-color: white;
 
   border-right: 1px #eee solid;
-
 }
 
 .rm-block-text > * {
-
   font-size: var(--font-size) !important;
-
 }
 
 .rm-block-text {
-
-  max-width: 600px;
-
+  max-width: 540px;
 }
 
 .block-highlight-yellow {
-
-  background-color: var(--color-primary-highlight)
-
+  background-color: var(--color-primary-highlight);
 }
 
 textarea {
-
   font-size: var(--font-size) !important;
 
   font-family: var(--body-font) !important;
 
-  max-width: 600px !important;
-
+  max-width: 540px !important;
 }
+
 
 /* ------- Zenith Features -------*/
 
