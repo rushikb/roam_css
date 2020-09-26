@@ -9,7 +9,7 @@
 @import url('https://rushikb.github.io/roam_css/rkb_custom.css');
 
 :root {
-  --page-width: 720px;
+  --page-width: 800px;
   --page-order: row-reverse;
   --header-font: "Lato", sans-serif;
   --body-font: "Open Sans", sans-serif;
@@ -40,6 +40,20 @@
   --body-background-color: #ffffff;
   --reference-item-background: hsl(0, 0%, 99%);
   --light-blue-selection: 144, 221, 244;
+  
+  --tag-font-color: #3C3B3B;
+  --tag-bg-color: #f9f9f9cf;
+  --tag-border-radius: 10px;
+  --tag-border: 1px solid #e6e6e682;
+  --tag-padding: 1px 5px 2px;
+  --tagHover-font-color: #b8b8b8;
+  --tagHover-bg-color: #e8e8e8;
+  --tagHover-border: 1px solid #dddddd82;
+  
+  --highlight-font-color: #282828;
+  --highlight-background-color: #fff1a4;
+  --highlight-link-color: #5c05ae;
+  --highlight-padding: 4px 5px 4px 5px;
 }
 
 .roam-sidebar-container {
@@ -48,6 +62,14 @@
 
 .roam-center {
   max-width: 820px;
+}
+
+/* text highlighting */
+.roam-highlight {
+    background-color: var(--highlight-background-color);
+    color: var(--highlight-font-color);
+    border-radius: 0px;
+    padding: var(--highlight-padding);
 }
 
 ::selection {
@@ -112,6 +134,26 @@ span.bp3-icon-small.bp3-icon-star {
 /* NOT SURE WHAT THIS DOES */
 .rm-embed-inner-block-hide {
   margin-left: -40px;
+}
+
+/* TAG */
+.rm-page-ref-tag {
+  color:  var(--tag-font-color )!important;
+  font-weight: 400;
+  background-color: var(--tag-bg-color);
+  border-radius: var(--tag-border-radius);
+  border: var(--tag-border);
+  padding: var(--tag-padding);
+}
+/* TAG HOVER */
+.rm-page-ref-tag:hover {
+  color: var(--tagHover-font-color) !important;
+  font-weight: 400;
+  background-color: var(--tagHover-bg-color);
+  border-radius: var(--tag-border-radius);
+  border: var(--tagHover-border);
+  padding: var(--tag-padding);
+  text-decoration: none;
 }
 
 /* INCREASE H3 SIZE */
