@@ -9,7 +9,7 @@
 @import url('https://rushikb.github.io/roam_css/rkb_custom.css');
 
 :root {
-  --page-width: 800px;
+  --page-width: 100%;
   --page-order: row-reverse;
   --header-font: "Lato", sans-serif;
   --body-font: "Open Sans", sans-serif;
@@ -60,10 +60,18 @@
   box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 10px 0px !important;
 }
 
+
 .roam-center {
   max-width: 820px;
 }
 
+.roam-block-container {
+    width: 760px;
+}
+
+#right-sidebar #roam-right-sidebar-content > div {
+   	width: 60% !important;
+}
 /* text highlighting */
 .roam-highlight {
     background-color: var(--highlight-background-color);
