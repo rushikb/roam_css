@@ -9,8 +9,9 @@
 @import url('https://rushikb.github.io/roam_css/rkb_custom.css');
 
 :root {
-  --page-width: 100%;
-  --page-order: row-reverse;
+  --page-width: 800px;
+  --page-side-width: 520px;
+  --page-order: row;
   --header-font: "Lato", sans-serif;
   --body-font: "Open Sans", sans-serif;
 
@@ -59,19 +60,19 @@
 .roam-sidebar-container {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 10px 0px !important;
 }
-
-
-.roam-center {
-  max-width: 820px;
+/* key update from Andy Gao to resize side page */
+.sidebar-content > *:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:first-child:not(:last-child) {
+    min-width: var(--page-side-width);
+}
+.sidebar-content > *:not(.rm-dnd-separator) > div:not(.rm-dnd-separator) > div:last-child:not(:first-child) {
+    width: var(--page-side-width);
 }
 
 .roam-block-container {
-    width: 760px;
+    width: 100% !important;
 }
 
-#right-sidebar #roam-right-sidebar-content > div {
-   	width: 60% !important;
-}
+
 /* text highlighting */
 .roam-highlight {
     background-color: var(--highlight-background-color);
@@ -124,6 +125,7 @@ span.rm-page-ref {
 #block-input {
   background: white;
 }
+
 
 .roam-body #block-input > span > div {
   padding: 6px 24px;
