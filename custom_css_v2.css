@@ -1,0 +1,120 @@
+@import url('https://rushikb.github.io/roam_css/rkb_custom.css'); 
+@import url('https://fonts.googleapis.com/css?family=Commissioner|Fira+Code|Bitter');
+:root {
+  --header-font: "Commissioner", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+  --subtle-border-color: rgba(0, 0, 0, 0.05);
+  --color-primary: 92, 5, 174;
+  --color-primary-highlight: #ffdd99b8;
+  --color-primary-contrast: #9aabd0;
+  --color-secondary: 138, 60, 200;
+  --color-secondary-contrast: #ffffff;
+  --text-color: #49556f;
+  --light-text-color: #5c7496;
+  --icon-color: #6a76a1;
+  --bullet-color: rgba(0, 0, 0, 0.2);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --main-background-color: hsl(210, 9%, 98%);
+  --body-background-color: #ffffff;
+  --reference-item-background: hsl(0, 0%, 99%);
+  --light-blue-selection: 144, 221, 244;
+  
+  --tag-font-color: #3C3B3B;
+  --tag-bg-color: #f9f9f9cf;
+  --tag-border-radius: 10px;
+  --tag-border: 1px solid #e6e6e682;
+  --tag-padding: 1px 5px 2px;
+  --tagHover-font-color: #b8b8b8;
+  --tagHover-bg-color: #e8e8e8;
+  --tagHover-border: 1px solid #dddddd82;
+  
+  --highlight-font-color: #282828;
+  --highlight-background-color: #fff1a4;
+  --highlight-link-color: #5c05ae;
+  --highlight-padding: 4px 5px 4px 5px;
+
+  --font-size: 1.02em;
+}
+
+
+/* hyperlinks */
+a {
+  color: rgb(var(--color-secondary)) !important;
+}
+/* TAG */
+.rm-page-ref-tag {
+  color:  var(--tag-font-color )!important;
+  font-weight: 400;
+  background-color: var(--tag-bg-color);
+  border-radius: var(--tag-border-radius);
+  border: var(--tag-border);
+  padding: var(--tag-padding);
+}
+
+/* page ref names inside brackets, potential duplicate rule*/
+.rm-page-ref.rm-page-ref-link-color{
+  color:rgb(var(--color-primary)) !important;
+  font-weight: 600 !important;
+
+}
+
+/* TAG HOVER */
+.rm-page-ref-tag:hover {
+  color: var(--tagHover-font-color) !important;
+  font-weight: 400;
+  background-color: var(--tagHover-bg-color);
+  border-radius: var(--tag-border-radius);
+  border: var(--tagHover-border);
+  padding: var(--tag-padding);
+  text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--body-font);
+
+}
+
+div,
+textarea {
+  font-weight: 400;
+
+  color: #49556f;;
+
+  font-family: var(--body-font);
+
+  line-height: 1.7em !important;
+
+  font-size: 1.001em;
+}
+
+
+.rm-title-display,
+.rm-title-textarea {
+  line-height: 1.2em !important;
+
+  font-family: var(--header-font);
+}
+
+.rm-title-display {
+  margin-top: 0.6em !important;
+}
+
+.block-border-left {
+
+  border-left-color: var(--subtle-border-color) !important;
+
+}
+
+/*@import url('https://rushikb.github.io/nox_roam-css-styles/Aquae_v2.css');
+.roam-center {
+   flex-basis: auto !important;
+   resize: horizontal !important;
+   overflow: auto !important;
+}
+*/
