@@ -1,0 +1,112 @@
+@import url('https://rushikb.github.io/roam_css/custom_css_v2.css');
+
+:root { 
+  /* FONTS */
+  --background : #FFFFFF;
+  --secondary-font : 'Fira Code', monospace;
+  --header-font : 'Commissioner';
+  --border : #DAD8D8;		
+  --sidebar-background : #FFFFFF;
+  --references: #F9F9F9;
+
+} 
+
+#roam-body-main{ 
+  border-radius: 12px !important; 
+  background : var(--background) !important;
+  margin-right : 6px !important; 
+  margin-left : 6px !important; 
+
+} 
+
+
+
+
+
+/* right sidebar divider apperance */
+#roam-right-sidebar-content
+{
+
+  	border-left: 1px solid var(--border) !important;
+}
+
+
+/* masonry mode */
+:root {
+  --right-sidebar-masonry-bg: var(--sidebar-background) !important;
+  --right-sidebar-masonry-outline: var(--border);
+}
+
+#app .roam-main .roam-body-main .roam-center {
+  flex: 1 1 100% !important;
+  flex-basis: 10% !important;
+}
+
+/* change the color of the gap between things in the right toolbar*/
+#right-sidebar {
+  /* container */
+  background-color: var(--references) !important;
+}
+
+.roam-log-container  {
+  padding: 10px;
+
+  border-radius: 5px;
+  
+}
+
+#right-sidebar #roam-right-sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  flex-flow: column wrap;
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content {
+  overflow: scroll !important;
+  white-space: normal;
+  display: flex;
+  align-content: flex-start;
+  flex-flow: column wrap;
+  /* item */
+}
+#right-sidebar #roam-right-sidebar-content .sidebar-content > div {
+  position: relative;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-right: 10px !important;
+  margin-left: 3px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  min-height: fit-content !important;
+  width: 100% !important;
+  max-width: 700px !important;
+  background-color: var(--sidebar-background) !important;
+  /* item header */
+  /* item content */
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2) {
+  resize: vertical;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 700px;
+}
+#right-sidebar
+  #roam-right-sidebar-content
+  .sidebar-content
+  > div
+  > div
+  > div:nth-child(2)
+  > div
+  > div.flex-v-box {
+  margin-left: 10px !important;
+}
+/* Right side bar reference boxes */
+
