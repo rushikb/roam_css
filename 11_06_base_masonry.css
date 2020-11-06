@@ -8,6 +8,7 @@
   --border : #DAD8D8;		
   --sidebar-background : #FFFFFF;
   --references: #F9F9F9;
+  --closed-bullets: #6c6c6c;
 
 } 
 
@@ -20,7 +21,12 @@
 } 
 
 
-
+.roam-bullet-closed {
+  background-color: var(--closed-bullets) !important;
+}
+.simple-bullet-inner {
+  background-color: var(--closed-bullets) !important;
+}
 
 
 /* right sidebar divider apperance */
