@@ -1,47 +1,167 @@
-@import url('https://rushikb.github.io/roam_css/custom_css_v2.css');
+@import url('https://rushikb.github.io/roam_css/rkb_custom.css');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&family=Fira+Code&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Work+Sans&display=swap');
 
 :root { 
-  /* FONTS */
+  --header-font: "Commissioner", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+    
+  --subtle-border-color: rgba(0, 0, 0, 0.05);
+  --color-primary: 92, 5, 174;
+  --color-primary-highlight: #ffdd99b8;
+  --color-primary-contrast: #9aabd0;
+  --color-secondary: 138, 60, 200;
+  --color-secondary-contrast: #ffffff;
+  --text-color: #49556f;
+  --light-text-color: #5c7496;
+  --icon-color: #6a76a1;
+  --bullet-color: rgba(0, 0, 0, 0.2);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --main-background-color: hsl(210, 9%, 98%);
+  --body-background-color: #ffffff;
+  --reference-item-background: hsl(0, 0%, 99%);
+  --light-blue-selection: 144, 221, 244;
+  
+  --tag-font-color: #3C3B3B;
+  --tag-bg-color: #f9f9f9cf;
+  --tag-border-radius: 10px;
+  --tag-border: 1px solid #e6e6e682;
+  --tag-padding: 1px 5px 2px;
+  --tagHover-font-color: #b8b8b8;
+  --tagHover-bg-color: #e8e8e8;
+  --tagHover-border: 1px solid #dddddd82;
+  
+  --highlight-font-color: #282828;
+  --highlight-background-color: #fff1a4;
+  --highlight-link-color: #5c05ae;
+  --highlight-padding: 4px 5px 4px 5px;
+
+  --font-size: 1.02em;
+    
+
   --background : #FFFFFF;
-  --secondary-font : 'Fira Code', monospace;
-  --header-font : 'Commissioner';
-  --border : #DAD8D8;		
+  --border : #F9F9F9;		
   --sidebar-background : #FFFFFF;
-  --references: #F9F9F9;
-  --closed-bullets: #6c6c6c;
+  --sidebar-background_sep: #F9F9F9;
 
 } 
 
-#roam-body-main{ 
-  border-radius: 12px !important; 
-  background : var(--background) !important;
-  margin-right : 6px !important; 
-  margin-left : 6px !important; 
+/* Font */
 
-} 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--body-font);
 
-
-.roam-bullet-closed {
-  background-color: var(--closed-bullets) !important;
 }
-.simple-bullet-inner {
-  background-color: var(--closed-bullets) !important;
+
+/* Font spacing and colour */
+div,
+textarea {
+
+  color: var(--text-color) !important;
+
+  font-family: var(--body-font) !important;
+
+  line-height: 1.7em !important;
+
+  font-size: 1.001em !important;
 }
+
+/* Header font and size */
+
+
+.rm-title-display,
+.rm-title-textarea {
+  line-height: 1.2em !important;
+
+  font-family: var(--header-font);
+}
+
+/*
+* ⌗ for block refs 🚀
+*/
+.rm-block-ref::before {
+    content: '⌗';
+    display: inline-block;
+    color: #4d94ff;
+    margin-right: 5px;
+    top: -2px;
+    position: relative;
+}
+.rm-block-ref {
+    display: inline-flex;
+    border-bottom: none;
+    font-size: 1em;
+    color: #627a9d;
+    background-color: #f5f7fa;
+}
+
+.rm-block-ref:hover {
+    cursor: pointer;
+}
+
+
+
+/* block span appearance */
+
+
+.block-border-left {
+
+  border-left-color: var(--subtle-border-color) !important;
+
+}
+
+
+
 
 
 /* right sidebar divider apperance */
 #roam-right-sidebar-content
 {
 
-  	border-left: 1px solid var(--border) !important;
+  	border-left: 1.5px solid var(--border) !important;
 }
+
+
+/* hyperlinks */
+a {
+  color: rgb(var(--color-secondary)) !important;
+}
+/* TAG */
+.rm-page-ref-tag {
+  color:  var(--tag-font-color )!important;
+  font-weight: 400;
+  background-color: var(--tag-bg-color);
+  border-radius: var(--tag-border-radius);
+  border: var(--tag-border);
+  padding: var(--tag-padding);
+}
+
+/* page ref names inside brackets, potential duplicate rule*/
+.rm-page-ref.rm-page-ref-link-color{
+  color:rgb(var(--color-primary)) !important;
+  font-weight: 600 !important;
+
+}
+
+/* TAG HOVER */
+.rm-page-ref-tag:hover {
+  color: var(--tagHover-font-color) !important;
+  font-weight: 400;
+  background-color: var(--tagHover-bg-color);
+  border-radius: var(--tag-border-radius);
+  border: var(--tagHover-border);
+  padding: var(--tag-padding);
+  text-decoration: none;
+}
+
+
 
 
 /* masonry mode */
-:root {
-  --right-sidebar-masonry-bg: var(--sidebar-background) !important;
-  --right-sidebar-masonry-outline: var(--border);
-}
 
 #app .roam-main .roam-body-main .roam-center {
   flex: 1 1 100% !important;
@@ -51,7 +171,7 @@
 /* change the color of the gap between things in the right toolbar*/
 #right-sidebar {
   /* container */
-  background-color: var(--references) !important;
+  background-color: var(--sidebar-background_sep) !important;
 }
 
 .roam-log-container  {
@@ -60,6 +180,7 @@
   border-radius: 5px;
   
 }
+
 
 #right-sidebar #roam-right-sidebar-content {
   overflow: scroll !important;
@@ -86,7 +207,7 @@
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 16px;
-  min-height: fit-content !important;
+  min-height: auto !important;
   width: 100% !important;
   max-width: 700px !important;
   background-color: var(--sidebar-background) !important;
@@ -102,7 +223,7 @@
   resize: vertical;
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 700px;
+
 }
 #right-sidebar
   #roam-right-sidebar-content
@@ -115,4 +236,17 @@
   margin-left: 10px !important;
 }
 /* Right side bar reference boxes */
+
+
+
+
+
+
+
+/* Viktor fix */
+/* ENLARGE SIZE OF CARROT */
+
+.rm-caret{
+  transform: scale(1.5);
+}
 
