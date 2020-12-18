@@ -49,11 +49,11 @@
     
     /* FONT SIZES */
     --main-font-size          : 1.005em !important;
-    --page-head-font-size     : 2.2em;
-    --h1-font-size            : 2em;
-    --h2-font-size            : 1.6em;
-    --h3-font-size            : 1.2em;
-    --sidebar-h1-size         : 2.2em;
+    --page-head-font-size     : 2.2em !important;
+    --h1-font-size            : 2em !important;
+    --h2-font-size            : 1.6em !important;
+    --h3-font-size            : 1.2em !important;
+    --sidebar-h1-size         : 2.2em !important;
     
     /* hashtags */
     --tag-font-color: #5C05AE;
