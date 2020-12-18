@@ -626,9 +626,7 @@ div[style*="border-bottom-color: rgb(138, 155, 168);"] {
 body,
 div,
 textarea {
-  font-family            : var(--global-font) !important;
-  -webkit-font-smoothing : antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--global-font) !important;
   font-size: var(--main-font-size) !important;  
 }
 
