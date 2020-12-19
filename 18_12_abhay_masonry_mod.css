@@ -107,9 +107,69 @@
   
   }
 
+/*font ---------------------------------------------------------------------------*/
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: inherit;
+}
+b { 
+  font-weight: 600 !important;
+}
+.rm-zoom.zoom-mentions-view {
+  font-size: inherit;
+}
+
+h1.level2,
+.rm-level1,
+.rm-level2,
+.rm-level3,
+.rm-heading-level-1 > .rm-block__self .rm-block__input,
+.rm-heading-level-2 > .rm-block__self .rm-block__input,
+.rm-heading-level-3 > .rm-block__self .rm-block__input {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h1.level2,
+.h1, h1 {
+  font-size: 20px;
+}
+
+b, strong { 
+  font-weight: 700!important;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  line-height: inherit;
+}
+
+.rm-zoom.zoom-mentions-view {
+  font-size: inherit;
+}
+
+h1.level2,
+.rm-level1,
+.rm-level2,
+.rm-level3,
+.rm-heading-level-1 > .rm-block__self .rm-block__input,
+.rm-heading-level-2 > .rm-block__self .rm-block__input,
+.rm-heading-level-3 > .rm-block__self .rm-block__input {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+h1.level2,
+.h1, h1 {
+  font-size: 20px;
+}
+
+
+
+
 
 /*---------------------------------------------------------------------------*/
-/*hashtags
+
 
 
 
