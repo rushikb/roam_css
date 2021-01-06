@@ -12,6 +12,15 @@ span.rm-page-ref[data-tag^="W/"] , span[data-link-title^='W/'] .rm-page-ref{
     line-height: 1em;
     font-weight: 500;
 }
+/* ads */
+span.rm-page-ref[data-tag^="Ads/"] , span[data-link-title^='Ads/'] .rm-page-ref{
+    background:  #0068d9 !important;
+    color: #fff !important;
+    padding: 1px 1px;
+    line-height: 1em;
+    font-weight: 500;
+}
+
 /* zettels */
 span.rm-page-ref[data-tag^="Z: "] {
     background: #569C3B !important;
